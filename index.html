@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="height-full flex--center">
+        <div class="password-generator | container">
+            <h1 class="password-generator__title">Generate a <br /><span class="text--accent">random password</span></h1>
+            <p class="password-generator__text">Never use an insecure password again.</p>
+            <form class="password-generator__form">
+                <div class="form__container">
+                    <label class="form__label" for="include-numbers">Include Numbers?</label>
+                    <input class="form__checkbox" name="include-numbers" type="checkbox" checked />
+                </div>
+                <div class="form__container">
+                    <label class="form__label" for="include-symbols">Include Symbols?</label>
+                    <input class="form__checkbox" name="include-symbols" type="checkbox" checked />
+                </div>
+                <div class="form__container | flex--col">
+                    <label class="form__label" for="password-length">Password Length: </label>
+                    <input class="form__slider" name="password-length" type="range" min="10" max="20" value="15"/>
+                </div> 
+                <button class="form__submit button button--accent" type="submit">Generate Passwords</button>
+            </form>
+            <div class="password-generator__output | flex cols2">
+                <button class="output__password1 button"></button>
+                <button class="output__password2 button"></button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
